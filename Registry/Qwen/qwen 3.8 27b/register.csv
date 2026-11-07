@@ -1,0 +1,5 @@
+layer,matrix,problem,evidence,edit,notes
+54,ffn_down,re-opens a solved problem (post-answer overthinking),held-out AUC 0.92 (depth-matched 0.94); written by ffn_out L50-54,"rank-1 push toward commit, alpha = -60.9 (0.75 x gap), 4.2% of ||W||",>= 1.5x breaks answers; project-out points the wrong way here
+54,ffn_down,ignores its own 'final answer' announcement,gate readout CV AUC 0.89,"gated rank-1 write, alpha = -88.1, 12.4% of ||W||",gate >= 1.5x gives gibberish; needs the row above to prevent cap hits
+39,ffn_down,stop decision (best-separating layer),"held-out AUC 0.94 (depth-matched 0.75, not significant); writers ffn_out-39, attn_output-35, linear_attn_out-37","gated rank-1 write, alpha = -29",converts stops but saves no tokens
+50,ffn_down,re-open (same feature as row 1),held-out AUC 0.94,none,linear gate is noisy (+-1.29) and flips sign at commit states
